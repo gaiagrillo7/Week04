@@ -6,5 +6,6 @@ class Persona:
         self.__nome = nome          #attributi o variabili d'istanza
         self.__cognome = cognome
 
+
     def __str__(self):
         return f"{self.__nome} {self.__cognome}"

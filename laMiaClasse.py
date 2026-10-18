@@ -1,10 +1,10 @@
 import operator
 
 class LaMiaClasse():
-    def __init__(self, attributo):
+    def __init__(self, attributo):   #metodo per inizializzare attributi
         self.attributo = attributo
 
-    def __str__(self):
+    def __str__(self):                #metodo di stampa
         return f"{self.attributo}"
 
     def __repr__(self):
@@ -20,7 +20,7 @@ class LaMiaClasse():
         else:
             return False
 
-o1 = LaMiaClasse("Pippo")
+o1 = LaMiaClasse("Pippo")    #definisco oggetto
 
 print("Stampa dell'oggetto con __str()__")
 print(str(o1)) # __ str__()
@@ -33,8 +33,8 @@ o2 = LaMiaClasse("Topolino")
 
 print("\n---------- Confronto tra oggetti ------------")
 
-# Come faccio a confrontare due oggetti o1 ed o2
-if o1 == o2:   # o1.__eq__(o2) per confronto con ==
+# Come faccio a confrontare due oggetti o1 ed o2:
+if o1 == o2:   # o1.__eq__(o2) per confronto con ==, questo è metodo eq generico, lo ridefinisco sopra
     print("Uguali")
 else:
     print("Diversi")
